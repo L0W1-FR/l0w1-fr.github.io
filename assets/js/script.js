@@ -1,6 +1,6 @@
 function redirectToBestOfLatest() {
     // Remplacez 'YOUR_CHANNEL_URL' par l'URL de votre chaîne YouTube best-of
-    const channelUrl = 'https://ltstyt.be/5n5';
+    const channelUrl = 'https://ltstyt.be/5n7';
 
     // Redirection vers la chaîne YouTube best-of
     window.location.href = channelUrl;
@@ -11,7 +11,7 @@ document.getElementById('ytb-latestbestof').addEventListener('click', redirectTo
 
 function redirectToVodLiveLatest() {
     // Remplacez 'YOUR_CHANNEL_URL' par l'URL de votre chaîne YouTube best-of
-    const channelUrl = 'https://ltstyt.be/5n6';
+    const channelUrl = 'https://ltstyt.be/5n8';
 
     // Redirection vers la chaîne YouTube best-of
     window.location.href = channelUrl;

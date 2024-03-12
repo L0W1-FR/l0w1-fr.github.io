@@ -45,7 +45,7 @@ document.getElementById('ytb-vod').addEventListener('click', redirectToVODLiveCh
 
 function redirectToInstagram() {
     // URL de redirection pour Instagram
-    const instagramUrl = 'https://www.instagram.com/l0w1_fr/';
+    const instagramUrl = 'https://www.instagram.com/l0w1_off/';
 
     // Redirection vers la page Instagram
     window.location.href = instagramUrl;
@@ -56,7 +56,7 @@ document.getElementById('instagram').addEventListener('click', redirectToInstagr
 
 function redirectToThreads() {
     // URL de redirection pour Threads
-    const threadsUrl = 'https://www.threads.net/@l0w1_fr';
+    const threadsUrl = 'https://www.threads.net/@l0w1_off';
 
     // Redirection vers la page Threads
     window.location.href = threadsUrl;

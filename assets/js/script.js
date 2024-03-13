@@ -52,7 +52,7 @@ function redirectToDiscordServer() {
 }
 
 // Ajouter un gestionnaire d'événements au bouton "Threads"
-document.getElementById('threads').addEventListener('click', redirectToDiscordServer);
+document.getElementById('discord').addEventListener('click', redirectToDiscordServer);
 
 function redirectToInstagram() {
     // URL de redirection pour Instagram

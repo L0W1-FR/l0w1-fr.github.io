@@ -43,6 +43,17 @@ function redirectToVODLiveChannel() {
 // Ajouter un gestionnaire d'événements au bouton best-of
 document.getElementById('ytb-vod').addEventListener('click', redirectToVODLiveChannel);
 
+function redirectToDiscordServer() {
+    // URL de redirection pour Threads
+    const discordUrl = 'https://discord.gg/6muRS5TEAF';
+
+    // Redirection vers la page Threads
+    window.location.href = discordUrl;
+}
+
+// Ajouter un gestionnaire d'événements au bouton "Threads"
+document.getElementById('threads').addEventListener('click', redirectToDiscordServer);
+
 function redirectToInstagram() {
     // URL de redirection pour Instagram
     const instagramUrl = 'https://www.instagram.com/l0w1_off/';

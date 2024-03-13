@@ -78,6 +78,7 @@ section {
 #ytb-latestbestof.button,
 #ytb-vod.button,
 #ytb-bestof.button,
+#discord.button,
 #instagram.button,
 #threads.button {
     width: 65%; /* Ajuste la largeur pour occuper la largeur disponible */
@@ -87,6 +88,7 @@ section {
 #ytb-latestbestof.button,
 #ytb-vod.button,
 #ytb-bestof.button,
+#discord.button,
 #instagram.button,
 #threads.button {
     height: auto; /* Ajuste la hauteur automatiquement */
@@ -96,6 +98,7 @@ section {
 #ytb-latestbestof.button,
 #ytb-vod.button,
 #ytb-bestof.button,
+#discord.button,
 #instagram.button,
 #threads.button {
     font-size: 24px; /* Ajuste la taille de la police pour des écrans plus petits */
@@ -105,6 +108,7 @@ section {
 #ytb-latestbestof.button,
 #ytb-vod.button,
 #ytb-bestof.button,
+#discord.button,
 #instagram.button,
 #threads.button{
     margin: 1em auto;
@@ -121,6 +125,10 @@ section {
 
 #ytb-latestvod.button{
     background-color: #5747cf;
+}
+
+#discord.button{
+    background-color: #5865f2;
 }
 
 #instagram.button {

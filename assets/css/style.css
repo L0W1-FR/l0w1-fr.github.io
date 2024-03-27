@@ -54,6 +54,24 @@ section {
     padding: 2em;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les éléments horizontalement */
+}
+
+#reseaux-sociaux {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les boutons horizontalement */
+}
+
+iframe-container {
+    width: calc(35% - 20px); /* Largeur de l'iframe avec espace de 20px entre les éléments */
+    margin: 1em; /* Ajouter un espace autour de l'iframe */
+}
+
 .button {
     vertical-align:middle;
     display: block;

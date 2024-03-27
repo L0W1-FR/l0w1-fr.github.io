@@ -43,6 +43,17 @@ function redirectToVODLiveChannel() {
 // Ajouter un gestionnaire d'événements au bouton best-of
 document.getElementById('ytb-vod').addEventListener('click', redirectToVODLiveChannel);
 
+function redirectToKofiPage() {
+    // URL de redirection pour Threads
+    const kofiUrl = 'https://ko-fi.com/l0w1_off';
+
+    // Redirection vers la page Threads
+    window.location.href = kofiUrl;
+}
+
+// Ajouter un gestionnaire d'événements au bouton "Threads"
+document.getElementById('kofi').addEventListener('click', redirectToKofiPage);
+
 function redirectToDiscordServer() {
     // URL de redirection pour Threads
     const discordUrl = 'https://discord.gg/6muRS5TEAF';

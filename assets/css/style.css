@@ -8,6 +8,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments sur la même ligne */
+    flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
 }
 
 header {
@@ -50,6 +52,9 @@ header, footer {
 }
 
 section {
+    flex-grow: 1; /* Les boutons prennent tout l'espace disponible */
+    display: flex; /* Utilisation de Flexbox pour aligner les boutons horizontalement */
+    flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
     text-align: center;
     padding: 2em;
 }
@@ -83,38 +88,8 @@ section {
 #instagram.button,
 #threads.button {
     width: 65%; /* Ajuste la largeur pour occuper la largeur disponible */
-}
-
-#ytb-latestvod.button,
-#ytb-latestbestof.button,
-#ytb-vod.button,
-#ytb-bestof.button,
-#kofi.button,
-#discord.button,
-#instagram.button,
-#threads.button {
     height: auto; /* Ajuste la hauteur automatiquement */
-}
-
-#ytb-latestvod.button,
-#ytb-latestbestof.button,
-#ytb-vod.button,
-#kofi.button,
-#ytb-bestof.button,
-#discord.button,
-#instagram.button,
-#threads.button {
     font-size: 24px; /* Ajuste la taille de la police pour des écrans plus petits */
-}
-
-#ytb-latestvod.button,
-#ytb-latestbestof.button,
-#ytb-vod.button,
-#ytb-bestof.button,
-#kofi.button,
-#discord.button,
-#instagram.button,
-#threads.button{
     margin: 1em auto;
 }
 
@@ -154,14 +129,12 @@ section {
 }
 
 #iframe-container {
-    float: right; /* Positionne à droite */
-    width: calc(100% - 200px); /* Largeur calculée pour laisser de l'espace aux boutons */
+    width: calc(100% - 400px); /* Réduire la largeur de l'iframe pour laisser de l'espace aux boutons */
     padding-left: 20px; /* Espacement à gauche */
 }
 
 /* Arrière-plan de l'iframe */
 #iframe-container iframe {
-    background: transparent; /* Fond transparent */
     width: 100%; /* Largeur pleine */
     border: none; /* Suppression de la bordure */
     padding: 0; /* Suppression des rembourrages */
@@ -188,5 +161,14 @@ footer p{
 
     .button {
         width: 80%;
+    }
+
+    section {
+        width: 100%; /* Les boutons prennent toute la largeur sur les petits écrans */
+    }
+
+    #iframe-container {
+        width: 100%; /* L'iframe prend toute la largeur sur les petits écrans */
+        padding-left: 0; /* Supprimer l'espacement à gauche sur les petits écrans */
     }
 }

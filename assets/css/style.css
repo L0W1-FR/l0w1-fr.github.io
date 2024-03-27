@@ -67,13 +67,6 @@ section {
     justify-content: center; /* Centrer les boutons horizontalement */
 }
 
-#iframe-container {
-    width: calc(35% - 20px); /* Largeur de l'iframe avec espace de 20px entre les éléments */
-    margin: 1em; /* Ajouter un espace autour de l'iframe */
-    border-radius: 15px; /* Arrondir les coins */
-    overflow: hidden; /* Masquer le contenu qui dépasse des coins arrondis */
-}
-
 .button {
     vertical-align:middle;
     display: block;

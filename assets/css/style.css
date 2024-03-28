@@ -54,17 +54,13 @@ section {
     padding: 2em;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrer les éléments horizontalement */
+iframe{
+  border-radius: 15px;
+  margin-top: 50%;
 }
-
-#reseaux-sociaux {
-    flex-grow: 1;
+.container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centrer les boutons horizontalement */
+    justify-content: center; /* Pour aligner horizontalement */
 }
 
 .button {

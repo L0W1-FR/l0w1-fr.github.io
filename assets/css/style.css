@@ -83,6 +83,7 @@ iframe{
     font-weight: bold;
 }
 
+#twitch,
 #ytb-latestvod.button,
 #ytb-latestbestof.button,
 #ytb-vod.button,
@@ -94,6 +95,7 @@ iframe{
     width: 65%; /* Ajuste la largeur pour occuper la largeur disponible */
 }
 
+#twitch,
 #ytb-latestvod.button,
 #ytb-latestbestof.button,
 #ytb-vod.button,
@@ -105,6 +107,7 @@ iframe{
     height: auto; /* Ajuste la hauteur automatiquement */
 }
 
+#twitch,
 #ytb-latestvod.button,
 #ytb-latestbestof.button,
 #ytb-vod.button,
@@ -116,6 +119,7 @@ iframe{
     font-size: 24px; /* Ajuste la taille de la police pour des écrans plus petits */
 }
 
+#twitch,
 #ytb-latestvod.button,
 #ytb-latestbestof.button,
 #ytb-vod.button,
@@ -125,6 +129,10 @@ iframe{
 #instagram.button,
 #threads.button{
     margin: 1em auto;
+}
+
+#twitch{
+    background-color: #a642ff;
 }
 
 #ytb-vod.button,

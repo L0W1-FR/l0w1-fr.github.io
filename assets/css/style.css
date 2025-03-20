@@ -91,7 +91,8 @@ iframe{
 #kofi.button,
 #discord.button,
 #instagram.button,
-#threads.button {
+#threads.button,
+#letterboxd.button {
     width: 65%; /* Ajuste la largeur pour occuper la largeur disponible */
 }
 
@@ -103,7 +104,8 @@ iframe{
 #kofi.button,
 #discord.button,
 #instagram.button,
-#threads.button {
+#threads.button,
+#letterboxd.button {
     height: auto; /* Ajuste la hauteur automatiquement */
 }
 
@@ -115,7 +117,8 @@ iframe{
 #ytb-bestof.button,
 #discord.button,
 #instagram.button,
-#threads.button {
+#threads.button,
+#letterboxd.button {
     font-size: 24px; /* Ajuste la taille de la police pour des écrans plus petits */
 }
 
@@ -127,7 +130,8 @@ iframe{
 #kofi.button,
 #discord.button,
 #instagram.button,
-#threads.button{
+#threads.button,
+#letterboxd.button {
     margin: 1em auto;
 }
 
@@ -137,7 +141,7 @@ iframe{
 
 #ytb-vod.button,
 #ytb-bestof.button{
-    background-color: #FF0000; /* Couleur de fond pour le bouton La chaîne VOD/LIVE */
+    background-color: #FF0000;
 }
 
 #ytb-latestbestof.button{
@@ -162,7 +166,12 @@ iframe{
 }
 
 #threads.button {
-    background-color: #000; /* Couleur de fond pour le bouton La chaîne BEST-OF */
+    background-color: #000;
+}
+
+,
+#letterboxd.button {
+background: linear-gradient(to right, #FF8000, #00D735, #00A4E4);
 }
 
 .button:active {

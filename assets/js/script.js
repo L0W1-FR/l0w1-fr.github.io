@@ -107,4 +107,4 @@ function redirectToLetterboxd() {
 }
 
 // Ajouter un gestionnaire d'événements au bouton "Threads"
-document.getElementById('threads').addEventListener('click', redirectToLetterboxd);
+document.getElementById('letterboxd').addEventListener('click', redirectToLetterboxd);

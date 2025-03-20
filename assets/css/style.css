@@ -171,7 +171,8 @@ iframe{
 
 ,
 #letterboxd.button {
-background: linear-gradient(to right, #FF8000, #00D735, #00A4E4);
+    background: linear-gradient(to right, #FF8000, #00D735, #00A4E4);
+    color: #fff;
 }
 
 .button:active {

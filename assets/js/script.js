@@ -84,7 +84,7 @@ function redirectToInstagram() {
     window.location.href = instagramUrl;
 }
 
-// Ajouter un gestionnaire d'événements au bouton "Instagram"
+// Ajouter un gestionnaire d'événements au bouton "Threads"
 document.getElementById('instagram').addEventListener('click', redirectToInstagram);
 
 function redirectToThreads() {
@@ -95,5 +95,16 @@ function redirectToThreads() {
     window.location.href = threadsUrl;
 }
 
-// Ajouter un gestionnaire d'événements au bouton "Threads"
+// Ajouter un gestionnaire d'événements au bouton "Letterboxd"
 document.getElementById('threads').addEventListener('click', redirectToThreads);
+
+function redirectToLetterboxd() {
+    // URL de redirection pour Threads
+    const letterboxdUrl = 'https://letterboxd.com/l0w1_fr/';
+
+    // Redirection vers la page Threads
+    window.location.href = letterboxdUrl;
+}
+
+// Ajouter un gestionnaire d'événements au bouton "Threads"
+document.getElementById('threads').addEventListener('click', redirectToLetterboxd);

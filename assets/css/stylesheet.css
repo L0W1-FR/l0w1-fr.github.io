@@ -51,10 +51,20 @@ header {
     font-size: 16px;
 }
 
-#twitch_wrapper {
-    width: 65%;
-    display: inline-block;
-    float: right;
+.twitch-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  max-width: 960px; /* Optional */
+  margin: 0 auto;
+}
+
+#twitch-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .container {

@@ -60,14 +60,18 @@ header {
 .twitch-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 0;
+}
+
+.twitch-player,
+.twitch-chat {
+  flex: 1 1 50%;
+  min-width: 300px;
 }
 
 .twitch-player {
-  flex: 1 1 640px;
-  aspect-ratio: 16 / 9;
   position: relative;
-  min-width: 300px;
+  aspect-ratio: 16 / 9;
 }
 
 #twitch-embed {
@@ -79,11 +83,9 @@ header {
 }
 
 .twitch-chat {
-  flex: 0 0 350px;
-  height: auto;
-  min-height: 500px;
-  width: 100%;
   border: none;
+  height: auto;
+  min-height: 100%;
 }
 
 .container {

@@ -20,17 +20,18 @@
         </div>
     </header>
 
-<div style="display: flex; gap: 10px; justify-content: center;">
-  <!-- Lecteur Twitch -->
-  <div id="twitch-embed"></div>
+<div class="twitch-wrapper">
+  <div class="twitch-flex">
+    <!-- Embed Twitch -->
+    <div id="twitch-embed"></div>
 
-  <!-- Chat Twitch -->
-  <iframe
-    src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
-    height="400"
-    width="300"
-    style="border: none;">
-  </iframe>
+    <!-- Chat Twitch -->
+    <iframe
+      src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
+      class="twitch-chat"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 <!-- Script d'intégration -->

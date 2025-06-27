@@ -6,6 +6,7 @@
     <title>L0W1</title>
     <link rel="stylesheet" href="assets\css\stylesheet.css">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
 </head>
 <body>
     <header>
@@ -20,25 +21,19 @@
         </div>
     </header>
 
-    <div id="twitch_wrapper">
-        <!--twitch: https://dev.twitch.tv/docs/embed/everything-->
-        <div class="twitch-stream">
-            <!-- Add a placeholder for the Twitch embed -->
-            <div id="twitch-embed"></div>
-
-            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-            <script type="text/javascript" class="twitch-stream-script">
-                new Twitch.Embed("twitch-embed", {
-                    width: "100%",
-                    height: "100%",
-                    theme: "dark",
-                    channel: "https://twitch.tv/l0w1_fr/",
-                    // only needed if your site is also embedded on embed.example.com and othersite.example.com
-                    parent: ["l0w1-fr.github.io"]
-                });
-            </script>
-        </div>
-    </div>
+<div id="SamplePlayerDivID"></div>
+    
+<script type="text/javascript">
+  var options = {
+    width: auto,
+    height: auto,
+    channel: "l0w1_fr",
+    // Only needed if this page is going to be embedded on other websites
+    parent: ["l0w1-fr.github.io"]
+  };
+  var player = new Twitch.Player("SamplePlayerDivID", options);
+  player.setVolume(0.5);
+</script>
 
     <section class="container">
         <div class="logo-container">

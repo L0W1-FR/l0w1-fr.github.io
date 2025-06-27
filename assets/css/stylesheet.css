@@ -51,12 +51,19 @@ header {
     font-size: 16px;
 }
 
-.twitch-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  max-width: 960px; /* Optional */
+.twitch-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.twitch-player {
+  flex: 1 1 640px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  min-width: 300px;
 }
 
 #twitch-embed {
@@ -65,6 +72,14 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.twitch-chat {
+  flex: 0 0 350px;
+  height: auto;
+  min-height: 500px;
+  width: 100%;
+  border: none;
 }
 
 .container {

@@ -20,35 +20,35 @@
         </div>
     </header>
     
-<!-- Twitch Embed Script -->
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-
-<!-- Responsive Container -->
-<div class="twitch-flex">
-  <!-- Twitch Video Player -->
-  <div class="twitch-player" id="twitch-embed"></div>
-
-  <!-- Twitch Chat -->
-  <iframe
-    class="twitch-chat"
-    src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen>
-  </iframe>
-</div>
-
-<!-- Embed Initialization -->
-<script>
-  new Twitch.Embed("twitch-embed", {
-    width: "100%",
-    height: "100%",
-    channel: "l0w1_fr",
-    layout: "video",
-    parent: ["l0w1-fr.github.io"]
-  });
-</script>
-
+    <!-- Twitch Script -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    
+    <!-- Your site container -->
+    <div class="section-container">
+      <div class="twitch-flex">
+        <div class="twitch-player">
+          <div id="twitch-embed"></div>
+        </div>
+        <iframe
+          class="twitch-chat"
+          src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+    </div>
+    
+    <!-- Embed Setup -->
+    <script>
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "100%",
+        channel: "l0w1_fr",
+        layout: "video",
+        parent: ["l0w1-fr.github.io"]
+      });
+    </script>
+    
     <section class="container">
         <div class="logo-container">
             <a href="https://twitch.tv/l0w1_fr" class="logo-link">

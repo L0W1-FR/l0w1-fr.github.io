@@ -23,22 +23,22 @@
     <!-- Twitch Script -->
     <script src="https://player.twitch.tv/js/embed/v1.js"></script>
     
-    <!-- Your site container -->
-    <div class="section-container">
-      <div class="twitch-flex">
+    <div class="twitch-container">
+      <div class="twitch-wrapper">
         <div class="twitch-player">
           <div id="twitch-embed"></div>
         </div>
-        <iframe
-          class="twitch-chat"
-          src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
-          frameborder="0"
-          scrolling="no">
-        </iframe>
+        <div class="twitch-chat-container">
+          <iframe
+            class="twitch-chat"
+            src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
+            frameborder="0"
+            scrolling="no">
+          </iframe>
+        </div>
       </div>
     </div>
     
-    <!-- Embed Setup -->
     <script>
       new Twitch.Embed("twitch-embed", {
         width: "100%",

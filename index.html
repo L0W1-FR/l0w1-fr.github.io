@@ -1,41 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-        <title>L0W1</title>
-    </head>
-    <body style="background-image: url(assets/img/background.jpg)">
-        <header>
-            <div id="profile-image">
-                <img src="assets/img/profile-logo.png" alt="profile-logo.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation de Logo</title>
+    <link rel="stylesheet" href="resources\css\stylesheet.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="profile-image">
+                <img src="resources/img/profile.jpg" alt="Profile Image">
             </div>
-            <h1>@L0W1</h1>
-            <p>Jeune streamer a mes heures perdues.</p>
-        </header>
-        <section class="container">
-            <div id="reseaux-sociaux">
-                <!-- Ajoutez ici vos liens vers vos réseaux sociaux -->
-                <button id="twitch" class="button"><span>La chaîne Twitch</span></button>
-                <button id="ytb-latestbestof" class="button"><span>La dernière vidéo best-of</span></button>
-                <button id="ytb-latestvod" class="button"><span>La dernière vidéo VOD</span></button>
-                <button id="ytb-bestof" class="button"><span>La chaîne BEST-OF </span></button>
-                <button id="ytb-vod" class="button"><span>La chaîne VOD/LIVE </span></button>
-                <button id="kofi" class="button"><span>Page Ko-fi pour les tips</span></button>
-                <button id="discord" class="button"><span>Le serveur Discord </span></button>
-                <button id="instagram" class="button"><span>Instagram </span></button>
-                <button id="threads" class="button"><span>Threads </span></button>
-                <button id="letterboxd" class="button"><span>Mon Letterboxd</span></button>
+            <div class="profile-text">
+                <h1>L0W1</h1>
+                <p>Il parait que je stream tout les jours 20h-0h sur Twitch</p>
             </div>
-            <div id="iframe-container">
-                <iframe src="https://ko-fi.com/l0w1_off/?hidefeed=true&widget=true&embed=true&preview=true" height=600px></iframe>            
+        </div>
+    </header>
+
+    <div id="twitch-embed"></div>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: 600,
+        channel: "https://www.twitch.tv/l0w1_fr/",
+        theme: "dark",
+        parent: "l0w1-fr.github.io"
+      });
+    </script>
+
+    <section class="container">
+        <div class="logo-container">
+            <a href="https://twitch.tv/l0w1_fr" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-twitch.png" alt="App 2 Logo">
+                <span class="logo-name">Twitch</span>
             </div>
-        </section>   
-        <footer>
-            <p>UNE CREATION DE L0W1.</p>
-        </footer>
-        <script src="assets/js/script.js"></script>
-    </body>
+        </a>
+        <a href="https://youtube.com/@L0W1_OFFICIEL" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-ytb1.png" alt="App 2 Logo">
+                <span class="logo-name">Chaîne principale</span>
+            </div>
+        </a>
+        <a href="https://youtube.com/@L0W1_VOD" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-ytb2.png" alt="App 1 Logo">
+                <span class="logo-name">Chaîne VOD</span>
+            </div>
+        </a>
+        <a href="https://instagram.com/l0w1_fr" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-instagram.png" alt="App 1 Logo">
+                <span class="logo-name">Instagram</span>
+            </div>
+        </a>
+        <a href="https://threads.com/l0w1_fr" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-threads.png" alt="App 2 Logo">
+                <span class="logo-name">Threads</span>
+            </div>
+        </a>
+        <a href="https://x.com/l0w1_fr" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-x.png" alt="App 1 Logo">
+                <span class="logo-name">X</span>
+            </div>
+        </a>
+        <a href="https://letterboxd.com/" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-letterboxd.png" alt="App 2 Logo">
+                <span class="logo-name">Letterboxd</span>
+            </div>
+        </a>
+        <a href="https://ko-fi.com/l0w1_fr" class="logo-link">
+            <div class="logo-item">
+                <img src="resources\img\logo-kofi.png" alt="App 2 Logo">
+                <span class="logo-name">Ko-Fi</span>
+            </div>
+        </a>
+            <!-- Ajoutez d'autres logos ici -->
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>L0W1 - 2025 &copy; Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
 </html>

@@ -19,21 +19,31 @@
         </div>
     </header>
 
-    <div id="twitch-embed"></div>
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: "800",
-        height: 400,
-        channel: "https://www.twitch.tv/l0w1_fr/",
-        theme: "dark",
-        parent: "l0w1-fr.github.io"
-      });
-    </script>
-    <iframe src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
-        height="400"
-        width="200">
-    </iframe>
+<div style="display: flex; gap: 10px; justify-content: center;">
+  <!-- Lecteur Twitch -->
+  <div id="twitch-embed"></div>
+
+  <!-- Chat Twitch -->
+  <iframe
+    src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
+    height="400"
+    width="300"
+    style="border: none;">
+  </iframe>
+</div>
+
+<!-- Script d'intégration -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: 800,
+    height: 400,
+    channel: "l0w1_fr", // pas d'URL ici, juste le nom de chaîne
+    theme: "dark",
+    layout: "video", // important pour éviter "video-with-chat"
+    parent: ["l0w1-fr.github.io"]
+  });
+</script>
 
     <section class="container">
         <div class="logo-container">

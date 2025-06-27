@@ -20,32 +20,27 @@
         </div>
     </header>
 
-<div class="twitch-wrapper">
-  <div class="twitch-flex">
-    <!-- Embed Twitch -->
-    <div id="twitch-embed"></div>
-
-    <!-- Chat Twitch -->
+<div class="twitch">
+  <div class="twitch-video">
     <iframe
-      src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
-      class="twitch-chat"
-      allowfullscreen>
+      src="https://player.twitch.tv/?channel=l0w1_frh&parent=l0w1-fr.github.io&autoplay=false"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen="true"
+      height="100%"
+      width="100%">
+    </iframe>
+  </div>
+  <div class="twitch-chat">
+    <iframe
+      frameborder="0"
+      scrolling="no"
+      src="https://www.twitch.tv/embed/l0w1-fr/chat?parent=l0w1-fr.github.io"
+      height="100%"
+      width="100%">
     </iframe>
   </div>
 </div>
-
-<!-- Script d'intégration -->
-<script src="https://embed.twitch.tv/embed/v1.js"></script>
-<script>
-  new Twitch.Embed("twitch-embed", {
-    width: "100%",
-    height: 400,
-    channel: "l0w1_fr",
-    theme: "dark",
-    layout: "video",
-    parent: ["l0w1-fr.github.io"]
-  });
-</script>
 
     <section class="container">
         <div class="logo-container">

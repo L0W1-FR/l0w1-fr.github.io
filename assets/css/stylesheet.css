@@ -67,6 +67,7 @@ header {
   width: 100%;
   aspect-ratio: 16 / 9;
   min-height: 300px;
+  position: relative; /* Ajoute ceci */
 }
 
 .twitch-chat {

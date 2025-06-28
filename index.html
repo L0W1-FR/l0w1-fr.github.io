@@ -24,16 +24,18 @@
     <script src="https://embed.twitch.tv/embed/v1.js"></script>
     
     <div class="twitch-container">
-      <div id="twitch-embed"></div>
+      <div class="twitch-player-wrapper">
+        <div id="twitch-embed"></div>
+      </div>
       <iframe
-        src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
         class="twitch-chat"
+        src="https://www.twitch.tv/embed/l0w1_fr/chat?parent=l0w1-fr.github.io"
         frameborder="0"
-        scrolling="no"
-        ></iframe>
+        scrolling="no">
+      </iframe>
     </div>
     
-    <!-- Twitch Embed Init -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
     <script>
       new Twitch.Embed("twitch-embed", {
         width: "100%",
@@ -44,7 +46,6 @@
         parent: ["l0w1-fr.github.io"]
       });
     </script>
-
     
     <section class="container">
         <div class="logo-container">

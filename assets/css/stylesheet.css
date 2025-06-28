@@ -51,59 +51,54 @@ header {
     font-size: 16px;
 }
 
-/* Container: row on desktop, column on mobile */
 .twitch-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 10px;
   justify-content: center;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+  max-width: 1000px;
   margin: 0 auto;
-  max-width: calc(622px + 350px + 10px); /* player width + chat width + gap */
+  height: 500px;
 }
 
-/* Player with 16:9 ratio — here: 622x350 */
-.twitch-player {
-  width: 622px;
-  height: 350px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-#twitch-embed {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
+/* Player */
+.twitch-player-wrapper {
+  flex: 1 1 auto;
   height: 100%;
+  position: relative;
+  min-width: 600px; /* enforce landscape shape */
 }
 
-/* Chat next to player */
-.twitch-chat {
-  width: 350px;
-  height: 350px;
+/* Force Twitch iframe to fill the wrapper */
+#twitch-embed iframe {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
   border: none;
-  flex-shrink: 0;
 }
 
-/* Mobile: stacked layout */
-@media (max-width: 1024px) {
+/* Chat */
+.twitch-chat {
+  flex: 0 0 350px;
+  height: 100%;
+  min-width: 350px;
+  border: none;
+}
+
+/* Mobile stacking */
+@media (max-width: 900px) {
   .twitch-container {
     flex-direction: column;
-    align-items: center;
-    max-width: 100%;
+    height: auto;
   }
 
-  .twitch-player,
+  .twitch-player-wrapper,
   .twitch-chat {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-  }
-
-  .twitch-chat {
-    aspect-ratio: auto;
     height: 400px;
+    min-width: unset;
   }
 }
 

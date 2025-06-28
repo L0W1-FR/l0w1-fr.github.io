@@ -50,44 +50,57 @@ header {
     margin: 5px 0 0;
     font-size: 16px;
 }
+
 .twitch-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
-  flex-wrap: nowrap; /* side by side on desktop */
+}
+
+/* Aspect-ratio box for video */
+.twitch-player-wrapper {
+  flex: 1 1 640px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  min-width: 300px;
 }
 
 #twitch-embed {
-  flex: 1 1 600px; /* grow and shrink, base 600px */
-  min-width: 400px;
-  aspect-ratio: 16 / 9;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
+/* Chat beside the player */
 .twitch-chat {
-  flex: 0 0 350px; /* fixed width */
-  min-width: 350px;
-  min-height: 400px;
+  flex: 0 0 350px;
+  height: auto;
+  min-height: 100%;
+  min-width: 300px;
   border: none;
 }
 
-/* Mobile */
+/* Mobile: stack player and chat, fix gap issue */
 @media (max-width: 768px) {
   .twitch-container {
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
   }
 
-  #twitch-embed,
+  .twitch-player-wrapper,
   .twitch-chat {
     width: 100%;
-    min-width: unset;
     max-width: 100%;
+    min-width: unset;
   }
 
   .twitch-chat {
-    min-height: 300px;
+    min-height: 400px;
   }
 }
 

@@ -51,59 +51,6 @@ header {
     font-size: 16px;
 }
 
-.twitch-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.twitch-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 0;
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  position: relative;
-}
-
-.twitch-player,
-.twitch-chat-container {
-  flex: 1;
-  position: relative;
-}
-
-.twitch-player > #twitch-embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.twitch-chat-container > .twitch-chat {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Stack on small screens */
-@media (max-width: 768px) {
-  .twitch-wrapper {
-    flex-direction: column;
-    aspect-ratio: unset;
-    height: auto;
-  }
-
-  .twitch-player,
-  .twitch-chat-container {
-    aspect-ratio: 16 / 9;
-    height: auto;
-  }
-}
-
 .container {
     width: 100%;
     display: flex;
